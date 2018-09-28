@@ -1,0 +1,832 @@
+/*
+The color theme for this website is
+"Elegant Yet Appro achable"
+
+#EDC7B7 rgb(237,199,183) (taupe)
+#EEE2DC rgb(238,226,220) (cream)
+#BAB2B5 rgb(186,178,181) (blue/cream)
+#123C69 rgb(18,60,105) (navy blue)
+#AC3B61 rgb(172,59,97) (Antique Red)
+*/
+
+/*====================
+CODE COMMON TO ALL PAGES
+====================*/
+* {
+    box-sizing: border-box;
+}
+body {
+    overflow-x: hidden;
+}
+
+/*---------------
+Fonts
+---------------*/
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Francois One', sans-serif;
+}
+p, li, a, .nav-link {
+    font-family: 'Quicksand', sans-serif;
+}
+/*---------------
+Primary Navbar
+---------------*/
+.navbar-light .navbar-nav .nav-link {
+    color:#285E88;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.nav-item {
+    transition: .3s ease-in-out;
+}
+.nav-item:hover {
+    background:rgba(192,192,192,.35);
+    transition: .3s ease-in-out;
+}
+.nav-item .active {
+    font-weight: bolder;
+}
+p {
+    color:#285E88;
+}
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+    background-color:rgba(128,128,128,.35);
+}
+.navbar-toggler:not(:disabled):not(.disabled) {
+    border-color:rgba(40,94,136,.32);
+}
+/*---------------
+Secondary Navbar (Call)
+---------------*/
+.call-navbar .nav-item:first-child {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px;
+}
+.call-navbar li {
+    border: none;
+}
+.phone-numbers .dropdown-item::before {
+    margin-right: 10px;
+    font-weight: bolder;
+}
+.phone-numbers .dropdown-item:nth-child(even) {
+    background-color: #F2F2F2;
+}
+#georgia::before {
+    content: "GA";
+}
+#new-jersey::before {
+    content: "NJ ";
+}
+#ohio::before {
+    content: "OH";
+}
+/* .call-navbar {
+    justify-content: flex-end !important;
+} */
+
+/*----------
+Other
+----------*/
+.up-arrow {
+    display: none !important;
+}
+
+/*----------
+Footer
+----------*/
+footer {
+    background-color: #BAB2B5;
+    padding: 30px 0;
+}
+footer a {
+    color: #031424;
+}
+footer h5 {
+    margin-bottom: 0;
+    color: #123C69;
+}
+
+/*====================
+HOME PAGE
+====================*/
+#main-content .container{
+    background-color: #F2F2F2;
+    padding: 15px;
+}
+.private-label img {
+    width: 110px;
+    padding: 4px;
+}
+.private-label {
+    margin-bottom: 30px;
+}
+/*---------------
+Primary-Carousel
+---------------*/
+.primary-carousel {
+    height: 320px;
+    width: 320px;
+    margin-bottom: 30px;
+    position: relative;
+}
+.primary-carousel .carousel-indicators {
+    margin-bottom: 0;
+    bottom: -9px;
+    margin: 0;
+}
+/* .carousel-indicators li{
+    background-color: black;
+    width: calc(100%/3);
+    margin: 0;
+} */
+.primary-carousel .carousel-indicators li{
+    text-indent: 0;
+    width: calc(100%/3);
+    margin: 0;
+    height: 30px;
+    bottom: -15px;
+    /* background-color: transparent; */
+    transition: .3s ease-in-out;
+    background-color: radial-gradient(
+    rgba(238,226,220,0.4),
+    rgba(238,226,220,0.4) 80%);
+    color: #D3D3D3;
+    font-weight: bolder;
+}
+.primary-carousel .carousel-indicators li:nth-child(n+1):nth-child(-n+2) {
+    border-right: 2px solid black;
+}
+.primary-carousel .carousel-indicators li:hover {
+    cursor: pointer;
+    background-color: #123C69;
+    color: #EEE2DC;
+}
+/*If it is in active class, write 
+a script to where the hover property 
+won't apply*/
+.primary-carousel .carousel-indicators li::after {
+    height: 0;
+    bottom: 10px;
+}
+.primary-carousel .carousel-indicators .active {
+    background: #123C69;
+    height: 30px;
+    transition: .3s ease-in-out;
+    color: #EEE2DC;
+}
+.primary-carousel .carousel-indicators li::before {
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+}
+.primary-carousel .carousel-indicators .active::before {
+    background-color: #123C69;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    transition: .3s ease-in-out;
+}
+.primary-carousel img[alt^="Large"] {
+    display: none !important;
+}
+/* .large-video,
+.small-video {
+    background-color: rgba(186,178,181,0.5);
+} */
+.large-video {
+    display: none;
+}
+.small-video {
+    width: 100%;
+}
+.primary-carousel .carousel-item:first-child::before {
+    content: '';
+    position: absolute;
+    height: 320px;
+    width: 100%;
+    background: rgba(255,0,255,0.2);
+    z-index: 10;
+}
+.primary-carousel .carousel-inner {
+    position: relative;
+}
+/* .carousel-control-prev {
+    background-color: black;
+    border-radius: 50%;
+    padding: 10px;
+    height: 35px;
+    width: 35px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+} */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 55px;
+  width: 55px;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  /* border: 1px solid black; */
+  background-image: none;
+  background-color: none;
+}
+.carousel-control-next-icon:after {
+  content: '>';
+  font-size: 32px;
+  color: #EEE2DC;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 32px;
+  color: #EEE2DC;
+}
+.pausePlay {
+    background-color: rgb(238,226,220);
+    width: 40px;
+    height: 40px;
+    color: rgb(18,60,105);
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    bottom: 30px;
+    right: 20px;
+}
+.pausePlay:hover {
+    background-color: rgb(238,226,220);
+    color: rgb(18,60,105);
+    box-shadow: 0px 5px 15px 0px #373737;
+}
+/* .fa-pause, .fa-play {
+    background-color: rgb(238,226,220);
+    width: 40px;
+    height: 40px;
+    color: rgb(18,60,105);
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    bottom: 50px;
+    right: 200px;
+} */
+.fa-pause {
+    z-index: 10;
+    padding: 12px 14px;
+}
+.fa-play {
+    z-index: 9;
+    padding: 11px 15px;
+}
+/*---------------
+Cube-Carousel
+---------------*/
+
+.jR3DCarouselGalleryDefault {
+  margin: 0 auto;
+}
+/*---------------
+Secondary-Carousel
+---------------*/
+.secondary-carousel {
+    height: 300px;
+    width: 345px;
+    transform: translateY(30px);
+    margin-bottom: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-right: 1px solid #D3D3D3;
+    border-left: 1px solid #D3D3D3;
+    border-bottom: 1px solid #D3D3D3;
+
+}
+/* .secondary-carousel li {
+    background-color: black;
+} */
+.secondary-carousel .carousel-indicators {
+    margin: 0;
+}
+.secondary-carousel .carousel-indicators li{
+    text-indent: 0;
+    width: calc(100%/3);
+    margin: 0;
+    height: 30px;
+    bottom: 290px;
+    /* background-color: transparent; */
+    transition: .3s ease-in-out;
+    background-color: radial-gradient(
+    rgba(238,226,220,0.4),
+    rgba(238,226,220,0.4) 80%);
+    color: #D3D3D3;
+    font-weight: bolder;
+}
+.secondary-carousel .carousel-indicators li:hover {
+    cursor: pointer;
+    /* background-color: #123C69;
+    color: #EEE2DC; */
+}
+.secondary-carousel .carousel-inner {
+    height: 100%;
+}
+.secondary-carousel .carousel-item {
+    padding: 25px 45px;
+}
+.secondary-carousel .carousel-indicators li:nth-child(n+1):nth-child(-n+3) {
+    border-right: 2px solid black;
+}
+.secondary-carousel .carousel-indicators li:hover {
+    cursor: pointer;
+    background-color: #123C69;
+    color: #EEE2DC;
+}
+.secondary-carousel .carousel-indicators .active {
+    background: #123C69;
+    /* height: 30px; */
+    transition: .3s ease-in-out;
+    color: #EEE2DC;
+    box-shadow: inset 0px -5px 5px -2px #BAB2B5;
+}
+/* .secondary-carousel .carousel-item {
+    transform: translateY(30px);
+} */
+.secondary-carousel li:first-child {
+    border-top-left-radius: 10px;
+}
+
+.secondary-carousel li:nth-child(4) {
+    border-top-right-radius: 10px;
+}
+.secondary-carousel .carousel-control-next-icon:after {
+    content: '>';
+    font-size: 32px;
+    color: #123C69;
+}
+.secondary-carousel .carousel-control-prev-icon:after {
+    content: '<';
+    font-size: 32px;
+    color: #123C69;
+}
+
+/*----------
+Other
+----------*/
+
+.featured-video iframe {
+    width: 350px;
+    height: 197px;
+    margin: 10px 0;
+}
+
+/*====================
+ABOUT PAGE
+====================*/
+#about .container{
+    background-color: #F2F2F2;
+    padding: 30px;
+}
+
+/*------
+Products Div
+------*/
+.products {
+    background-color: black;
+    border: 2px solid #AC3B61;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 125px;
+    width: 100%;
+    margin: 30px 0;
+}
+.products img {
+    width: 100px;
+    height: 100px;
+}
+/*====================
+SWEEPING COMPOUND PAGE
+====================*/
+
+
+/*====================
+CONTACT PAGE
+====================*/
+
+#contact-location .container{
+    background-color: #F2F2F2;
+    padding: 15px;
+}
+/*-----------
+Offices Div
+------------ */
+/* .offices {
+    display: flex;
+    flex-direction: column;
+}
+.offices div {
+    width: 200px;
+    height: 200px;
+} */
+/* .tab-pane div {
+    background-size: cover;
+}
+.tab-pane:first-child div {
+    background-image: url("images/gaMap.jpg");
+}
+.tab-pane:nth-child(2) div {
+    background-image: url("images/njMap.jpg");
+}
+.tab-pane:nth-child(3) div {
+    background-image: url("images/ohMap.png");
+} */
+.tab-pane {
+    background-color: #ADD8E6;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 15px;
+}
+
+/*-----------
+FORM
+------------ */
+#name,
+#email,
+#subject,
+#message {
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    padding: 5px;
+    display: block;
+    font-family: sans-serif;
+}
+input::placeholder,
+textarea::placeholder {
+    font-family: 'Open Sans', sans-serif;
+}
+form button {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #E85A4F;
+    color: #EAE7DC;
+    font-weight: 900 !important;
+    border-radius: 10px !important;
+    width: 95% !important;
+}
+.form-submitted {
+    border: 5px solid green;
+    border-radius: 10px;
+    width: 100%;
+    color: green;
+    font-weight: 900;
+}
+.form-submitted p {
+    margin-bottom: 0 !important;
+    padding: 10px;
+}
+/*----------
+State map selector
+----------*/
+.state-menu {
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.state-menu .nav-link {
+    margin-left: 10px;
+}
+.state-maps a {
+    color: #EEE2DC !important;
+    font-weight: bolder;
+}
+.state-maps a:hover {
+    cursor: pointer;
+    color: black !important;
+}
+.state-menu li .dropdown-menu {
+    border: 2px solid #EEE2DC;
+    background-color: #AC3B61;
+}
+.mapouter {
+    text-align:right;
+    height: 300px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.gmap_canvas {
+    overflow: hidden;
+    background :none!important;
+    height: 300px;
+    width: 100%;
+}
+
+/*====================
+FAQs PAGE
+====================*/
+.bold-text {
+    font-weight: bolder;
+}
+/*----------
+Accordion
+----------*/
+.q-and-a p {
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    margin-bottom: 0;
+    padding: 0 16px 16px;
+}
+.q-and-a p:first-child {
+    border-top: 1px solid black;
+}
+.q-and-a p:nth-child(odd) {
+    background-color: #96CDCD;
+}
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none !important;
+    transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.minus, .accordion:hover {
+    background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    /* max-height: 0; */
+    display: none;
+    overflow: hidden;
+    /* transition: max-height 0.2s ease-out; */
+}
+.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+.minus:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+/* #accordion-1 {
+    width: 65%;
+}
+#accordion-1 a {
+    color: black;
+    transition: .3s ease-in-out;
+}
+.minus2, #accordion-1 a:hover {
+    text-decoration: none;
+    color: black;
+    background-color: #dcdcdc;
+    transition: .3s ease-in-out;
+}
+.card-header {
+    position: relative;
+}
+.card-header:after {
+    content: '\02795'; 
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+    position: absolute;
+    top: 12px;
+    right: 20px;
+}
+.minus2:after {
+    content: "\2796"; 
+} */
+
+
+/*---END SMALL SCREEN QUERY-----*/
+@media (min-width: 375px) {
+
+    /*---------------
+    Primary-Carousel
+    ---------------*/
+    .primary-carousel {
+        height: 375px;
+        width: 375px;
+    }
+    .primary-carousel .carousel-item:first-child::before {
+        height: 375px;
+    }    
+}
+@media (min-width: 768px) {
+    /*====================
+    CODE COMMON TO ALL PAGES
+    ====================*/
+
+    /*====================
+    HOME PAGE
+    ====================*/
+    
+    /*----------
+    Primary-carousel
+    ----------*/
+    .primary-carousel {
+        margin-bottom: 0px;
+    }
+    .primary-carousel img[alt^="Large"] {
+        display: block !important;
+    }
+    .primary-carousel img[alt^="Small"] {
+        display: none !important;
+    }
+    .primary-carousel .carousel-indicators li{
+        bottom: -1px;
+    }
+    .carousel-control-prev-icon:after {
+        color: #123C69;
+    }
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        background-color: #123C69;
+    }
+    .carousel-control-next-icon:after {
+        color: #EEE2DC;
+    }
+    .carousel-control-prev-icon:after {
+        color: #EEE2DC;
+    }
+
+
+    
+    /*----------
+    Other
+    ----------*/
+    .osha img {
+        transform: translateY(23px);
+    }
+    .col-12 iframe {
+        width: 450px;
+        height: 254px;
+    }
+    
+
+    /*====================
+    CONTACT PAGE
+    ====================*/
+
+    /*-----------
+    Offices Div
+    ------------ */
+    .offices {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+}
+/*---END MEDIUM SCREEN QUERY-----*/
+
+@media (min-width: 1024px) {
+    /*====================
+    CODE COMMON TO ALL PAGES
+    ====================*/
+
+    /*-----
+    Primary Navbar
+    -----*/
+    .primary-nav li:nth-child(n+1):nth-child(-n+4),
+    .secondary-nav li:nth-child(n+1):nth-child(-n+4) {
+        border-right: 1px solid black;
+    }
+    /*-----
+    Secondary Navbar
+    -----*/
+    /*-----
+    up-arrow
+    -----*/
+    .up-arrow .fa-arrow-up {
+        font-size: 50px;
+    }
+    .up-arrow {
+        display: flex !important;
+        background-color: #6495ED;
+        color: #EEE2DC;
+        width: 75px;
+        height: 75px;
+        position: fixed;
+        right: 25px;
+        bottom: 25px;
+        z-index: 1000;
+    }
+    .up-arrow:hover {
+        text-decoration: none;
+        color: #EDC7B7;
+        background-color:  #123C69;
+        box-shadow: 0px 0px 15px 1px #373737;
+        transition: all .15s;
+    }
+
+    /*====================
+    HOME PAGE
+    ====================*/
+    /*----------
+    Primary Carousel
+    ----------*/
+    .primary-carousel {
+        height: 360px;
+        width: 1140px;
+    }    
+    /*-----
+    Other
+    -----*/
+    .private-label img {
+        width: 150px;
+        padding: 8px;
+    }
+    .osha img {
+        transform: translateY(23px);
+    }
+    .col-12 iframe {
+        width: 450px;
+        height: 254px;
+    }
+    .large-video {
+        display: block;
+        /* position: absolute; */
+        left: 50%;
+        transform: translateX(40%);
+        z-index: 9;
+    }
+    .small-video {
+        display: none;
+    }
+    .primary-carousel .carousel-item img:first-child {        
+        height: 360px;
+        width: 75%;
+        margin: auto;
+        /* left: 50%; */
+        /* transform: translateX(50%); */
+    }    
+    .pausePlay {
+        bottom: 50px;
+        right: 200px;
+    }
+    .secondary-carousel {
+        width: 425px;
+        padding: 25px 60px;
+    }
+    .secondary-carousel .carousel-item {
+        padding: 0;
+    }    
+    .secondary-carousel .carousel-control-prev-icon:after,
+    .secondary-carousel .carousel-control-next-icon:after {
+        color: #EEE2DC;
+    }
+    
+    #main-content .container {
+        background-color: #F2F2F2;
+        padding: 30px;
+    }    
+
+    /*====================
+    CONTACT PAGE
+    ====================*/
+
+    #name,
+    #email,
+    #subject,
+    #message {
+        width: 60%;
+    }
+    form button {
+        width: 60% !important;
+    }
+
+    /*-----------
+    Offices Div
+    ------------ */
+    /* .offices {
+        flex-direction: column;
+    } */
+    .mapouter {
+        height: 400px;
+    }
+    .gmap_canvas {
+        height: 400px;
+    }
+    /*====================
+    FAQs PAGE
+    ====================*/
+    .q-and-a {
+        width: 60%;
+    }
