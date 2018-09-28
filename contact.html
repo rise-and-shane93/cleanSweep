@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clean Sweep Products</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Felipa"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Francois+One|Quicksand">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-image:url(&quot;images/cs-background.png&quot;);background-size:cover;background-attachment:fixed;background-repeat:no-repeat;">
+    <section id="#top">
+            <div style="width:100%;background-color:rgb(245,245,245);box-shadow:0px 3px 5px rgba(0,0,0,0.15);">
+                <div class="container">
+                    <nav class="navbar navbar-light navbar-expand-md">
+                        <a class="navbar-brand" href="#">Navbar</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navcol-1" aria-controls="navcol-1" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <!-- <div class="container-fluid"><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button> -->
+                            <div class="collapse navbar-collapse" id="navcol-1">
+                                <ul class="nav navbar-nav primary-nav ml-auto">
+                                    <li class="nav-item" role="presentation"><a class="nav-link" href="index.html">Home</a></li>
+                                    <li class="nav-item" role="presentation"><a class="nav-link" href="about.html">About</a></li>
+                                    <li class="nav-item" role="presentation"><a class="nav-link" href="sweep.html">Sweeping Compound</a></li>
+                                    <li class="nav-item" role="presentation"><a class="nav-link" href="faq.html">FAQs</a></li>
+                                    <li class="nav-item" role="presentation"><a class="nav-link active" href="#">Contact</a></li>
+                                </ul>
+                            </div>
+                </div><!--/container-->
+                    </nav><!--/main-nav-->
+                    <nav class="navbar navbar-expand navbar-dark bg-dark call-navbar">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <div class="container d-flex flex-row justify-content-end">
+                                <ul class="navbar-nav secondary-nav navbar-left pull-right">
+                                    <li class="nav-item"><span class="fa fa-phone" aria-hidden="true"></span> Call Us&#33;</li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Select a state
+                                        </a>
+                                        <div class="dropdown-menu phone-numbers dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                                            <a class="dropdown-item" href="tel:7066293030" id="georgia">&#40;706&#41;&#45;629&#45;3030</a>
+                                            <a class="dropdown-item" href="tel:8622579394" id="new-jersey">&#40;862&#41;&#45;257&#45;9394</a>
+                                            <a class="dropdown-item" href="tel:7402230150" id="ohio">&#40;740&#41;&#45;223&#45;0150</a>
+                                            <!--This is where you have the customer select phone/fax to access the numbers.-->
+                                        </div>
+                                    </li>
+                                    <!-- <div class="states d-flex flex-row align-items-center">
+                                        <li class="nav-item georgia" role="presentation"><a class="nav-link" href="tel:7066293030">&#40;706&#41;&#45;629&#45;3030</a></li>
+                                        <li class="nav-item new-jersey" role="presentation"><a class="nav-link" href="tel:8622579394">&#40;862&#41;&#45;257&#45;9394</a></li>
+                                        <li class="nav-item ohio" role="presentation"><a class="nav-link" href="tel:7402230150">&#40;740&#41;&#45;223&#45;0150</a></li>
+                                    </div> -->
+                                </ul>
+                            </div><!--/container-->
+                        </div>
+                    </nav>
+                </div><!--/navbars-->
+            </div>
+        </section><!--/#top-->
+        <section id="contact-location">
+            <div class="container">
+                <h2 class="text-center">Contact</h2>
+                <form method="post" action="https://formspree.io/cdtharper@gmail.com" class="d-flex flex-column align-items-center">
+                    <legend class="text-center">We would love to hear from you&#33;</legend>
+                    <input class="form-control" type="text" name="name" id="name" placeholder = "Name" required />
+                    <input class="form-control" type="email" name="email" id="email" placeholder = "Email" required />
+                    <input class="form-control" type="text" name="subject" id="subject" placeholder = "Subject"/>
+                    <textarea class="form-control" name="message" id="message" rows="7" placeholder="Message"></textarea>
+                    <button type="submit" name="submit" class="btn btn-submit mb-1">
+                        Submit&#33;
+                    </button>
+                    <button type="button" class="btn disabled btn-outline-success">Form Submitted&#33;</button>
+                </form>
+                <p class="text-justify">Goal is to provide excellent quality products and service, at a fair price. 
+                    We offer over 65 years of experience to get the job done right&#33;</p>
+                    <!--consider putting this in its own div with a backdrop of employees-->
+        <hr>
+        <!--/I may switch to differing & subtle background colors for different sections-->
+        <h1 class="text-center">Our Offices</h1>        
+            <div class="row">
+                    <div class="col-12 col-md-6 col-lg-7">
+                        <!-- <div class="offices">
+                            <div>
+                                <h3 class="text-center">Georgia</h3>
+                                <p>127 Nance Rd NE<br>Calhoun, GA 30701</p>
+                                <p><span class="fa fa-phone" aria-hidden="true"></span><a href="tel:7066293030">&#40;706&#41;&#45;629&#45;3030</a></p>
+                                <p><span class="fa fa-fax" aria-hidden="true"></span>&#40;706&#41;&#45;629&#45;3080</p>
+                            </div>
+                            <div>
+                                <h3 class="text-center">New Jersey, Corporate Office</h3>
+                                <p>62 Kearney St<br>Paterson, NJ 07522</p>
+                                <p><span class="fa fa-phone" aria-hidden="true"></span><a href="tel:8622579394">&#40;862&#41;&#45;257&#45;9394</a></p>
+                                <p><span class="fa fa-fax" aria-hidden="true"></span>&#40;862&#41;&#45;257&#45;9396</p>
+                            </div>
+                            <div>
+                                <h3 class="text-center">Ohio</h3>
+                                <p>1582 Likens Rd<br>Marion, OH 43002</p>
+                                <p><span class="fa fa-phone" aria-hidden="true"></span><a href="tel:7402230150">&#40;740&#41;&#45;223&#45;0150</a></p>
+                                <p><span class="fa fa-fax" aria-hidden="true"></span>&#40;740&#41;&#45;223&#45;0152</p>
+                            </div>    
+                        </div> -->
+                        <!-- <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="ga-tab" data-toggle="tab" href="#georgia" 
+                                role="tab" aria-controls="georgia" aria-selected="true">Georgia</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="nj-tab" data-toggle="tab" href="#newjersey" 
+                                role="tab" aria-controls="newjersey" aria-selected="false">New Jersey</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="oh-tab" data-toggle="tab" href="#ohio" 
+                                role="tab" aria-controls="ohio" aria-selected="false">Ohio</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="georgia" role="tabpanel" aria-labelledby="ga-tab">
+                                <div>
+                                    <h3 class="text-center">Georgia</h3>
+                                    <p>127 Nance Rd NE<br>Calhoun, GA 30701</p>
+                                    <p><span class="fa fa-phone" aria-hidden="true"></span><a href="tel:7066293030">&#40;706&#41;&#45;629&#45;3030</a></p>
+                                    <p><span class="fa fa-fax" aria-hidden="true"></span>&#40;706&#41;&#45;629&#45;3080</p>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="newjersey" role="tabpanel" aria-labelledby="newjersey-tab">
+                                <div>
+                                    <h3 class="text-center">New Jersey, Corporate Office</h3>
+                                    <p>62 Kearney St<br>Paterson, NJ 07522</p>
+                                    <p><span class="fa fa-phone" aria-hidden="true"></span><a href="tel:8622579394">&#40;862&#41;&#45;257&#45;9394</a></p>
+                                    <p><span class="fa fa-fax" aria-hidden="true"></span>&#40;862&#41;&#45;257&#45;9396</p>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="ohio" role="tabpanel" aria-labelledby="ohio-tab">
+                                <div>
+                                    <h3 class="text-center">Ohio</h3>
+                                    <p>1582 Likens Rd<br>Marion, OH 43002</p>
+                                    <p><span class="fa fa-phone" aria-hidden="true"></span><a href="tel:7402230150">&#40;740&#41;&#45;223&#45;0150</a></p>
+                                    <p><span class="fa fa-fax" aria-hidden="true"></span>&#40;740&#41;&#45;223&#45;0152</p>
+                                </div>
+                            </div>
+                        </div> -->
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active ga-map" id="ga-tab" data-toggle="tab" href="#gaPanel" role="tab" aria-controls="georgia" aria-selected="true">Georgia</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nj-map" id="nj-tab" data-toggle="tab" href="#njPanel" role="tab" aria-controls="newJersey" aria-selected="false">New Jersey</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link oh-map" id="oh-tab" data-toggle="tab" href="#ohPanel" role="tab" aria-controls="ohio" aria-selected="false">Ohio</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="gaPanel" role="tabpanel" aria-labelledby="ga-tab">
+                                <h3 class="text-center">Georgia</h3>
+                                <p>127 Nance Rd NE<br>Calhoun, GA 30701</p>
+                                <p><span class="fa fa-phone" aria-hidden="true"></span><a href="tel:7066293030">&#40;706&#41;&#45;629&#45;3030</a></p>
+                                <p><span class="fa fa-fax" aria-hidden="true"></span>&#40;706&#41;&#45;629&#45;3080</p>
+                            </div>
+                            <div class="tab-pane fade" id="njPanel" role="tabpanel" aria-labelledby="nj-tab">
+                                <h3 class="text-center">New Jersey, Corporate Office</h3>
+                                <p>62 Kearney St<br>Paterson, NJ 07522</p>
+                                <p><span class="fa fa-phone" aria-hidden="true"></span><a href="tel:8622579394">&#40;862&#41;&#45;257&#45;9394</a></p>
+                                <p><span class="fa fa-fax" aria-hidden="true"></span>&#40;862&#41;&#45;257&#45;9396</p>
+                            </div>
+                            <div class="tab-pane fade" id="ohPanel" role="tabpanel" aria-labelledby="oh-tab">
+                                <h3 class="text-center">Ohio</h3>
+                                <p>1582 Likens Rd<br>Marion, OH 43002</p>
+                                <p><span class="fa fa-phone" aria-hidden="true"></span><a href="tel:7402230150">&#40;740&#41;&#45;223&#45;0150</a></p>
+                                <p><span class="fa fa-fax" aria-hidden="true"></span>&#40;740&#41;&#45;223&#45;0152</p>
+                            </div>
+                        </div><!--/tab-content-->
+                        <!--get help from meetup-->
+                    </div><!--/col-->
+                    <div class="col-12 col-mg-6 col-lg-5">
+                        <!-- <div id="map" style="width: 100%; height: 300px;"></div> -->
+                        <nav class="navbar-dark">
+                            <ul class="navbar-nav navbar-dark bg-dark state-menu navbar-left pull-left">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Select a state
+                                    </a>
+                                    <div class="dropdown-menu state-maps dropdown-menu-left" aria-labelledby="navbarDropdownMenuLink">
+                                        <a class="dropdown-item ga-map">Georgia</a>
+                                        <a class="dropdown-item nj-map">New Jersey</a>
+                                        <a class="dropdown-item oh-map">Ohio</a>
+                                        <!--This is where you have the customer select phone/fax to access the numbers.-->
+                                    </div><!--/dropdown-menu-->
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="mapouter">
+                            <div class="gmap_canvas">
+                                <iframe width="100%" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=127%20Nance%20Rd&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                            </div>
+                        </div>
+                    </div><!--/col-->
+                </div><!--/row-->
+            </div><!--/container-->
+        </section><!--/main-content-->
+    <a class="up-arrow d-flex align-items-center justify-content-center"
+    href="#">
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </a>
+    <footer>
+        <h5 class="text-center"><a href="https://webmarketsol.com/" target="_blank">&copy;Web Marketing Solutions, LLC</a>, 2018. All rights reserved.</h5>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/maps.js"></script>
+</body>
+
+</html>
