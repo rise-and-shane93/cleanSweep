@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clean Sweep Products</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Felipa"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Francois+One|Quicksand">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-image:url(&quot;images/cs-background.png&quot;);background-size:cover;background-attachment:fixed;background-repeat:no-repeat;">
+    <div style="width:100%;background-color:rgb(245,245,245);box-shadow:0px 3px 5px rgba(0,0,0,0.15);">
+        <div class="container">
+            <div class="row">
+                <div class="col"></div>
+            </div>
+            <nav class="navbar navbar-light navbar-expand-md">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navcol-1" aria-controls="navcol-1" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- <div class="container-fluid"><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button> -->
+                    <div class="collapse navbar-collapse" id="navcol-1">
+                        <ul class="nav navbar-nav primary-nav ml-auto">
+                            <li class="nav-item" role="presentation"><a class="nav-link active" href="#">Home</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="about.html">About</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="sweep.html">Sweeping Compound</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="faq.html">FAQs</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+        </div><!--/container-->
+            </nav><!--/main-nav-->
+            <nav class="navbar navbar-expand navbar-dark bg-dark call-navbar">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <div class="container d-flex flex-row justify-content-end">
+                        <ul class="navbar-nav secondary-nav navbar-left pull-right">
+                            <li class="nav-item"><span class="fa fa-phone" aria-hidden="true"></span> Call Us&#33;</li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Select a state
+                                </a>
+                                <div class="dropdown-menu phone-numbers dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="tel:7066293030" id="georgia">&#40;706&#41;&#45;629&#45;3030</a>
+                                    <a class="dropdown-item" href="tel:8622579394" id="new-jersey">&#40;862&#41;&#45;257&#45;9394</a>
+                                    <a class="dropdown-item" href="tel:7402230150" id="ohio">&#40;740&#41;&#45;223&#45;0150</a>
+                                    <!--This is where you have the customer select phone/fax to access the numbers.-->
+                                </div>
+                            </li>
+                            <!-- <div class="states d-flex flex-row align-items-center">
+                                <li class="nav-item georgia" role="presentation"><a class="nav-link" href="tel:7066293030">&#40;706&#41;&#45;629&#45;3030</a></li>
+                                <li class="nav-item new-jersey" role="presentation"><a class="nav-link" href="tel:8622579394">&#40;862&#41;&#45;257&#45;9394</a></li>
+                                <li class="nav-item ohio" role="presentation"><a class="nav-link" href="tel:7402230150">&#40;740&#41;&#45;223&#45;0150</a></li>
+                            </div> -->
+                        </ul>
+                    </div><!--/container-->
+                </div>
+              </nav>
+        </div>
+    </div>
+    <div class="container" style="background-color:rgb(245,245,245);padding-right:0px;padding-left:0px;">
+        <div class="row no-gutters">
+            <div class="col d-flex flex-column align-items-center">
+                <div class="carousel slide primary-carousel carousel-fade carousel-fade" data-ride="carousel" data-keyboard="false" id="carousel-1" style="max-height:350px;">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-1" data-slide-to="0" class="active text-center">Slide 1</li>
+                        <li data-target="#carousel-1" data-slide-to="1" class="text-center">Slide 2</li>
+                        <li data-target="#carousel-1" data-slide-to="2" class="text-center">Slide 3</li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <video preload="true" autoplay="autoplay" loop="true" muted class="large-video">
+                                <source src="videos/sweepProduct.mp4" type="video/mp4">
+                                <!-- <source src="videos/sweepProduct.ogg" type="video/ogg"> -->
+                            </video>
+                            <video preload="true" autoplay="autoplay" loop="true" muted class="small-video">
+                                <source src="videos/sweepProductSq.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block" src="images/compound.png" alt="Large Slide Image">
+                            <img class="w-100 d-block" src="images/compoundSquare.png" alt="Small Slide Image">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block" src="images/broom.png" alt="Large Slide Image">
+                            <img class="w-100 d-block" src="images/broomSquare.png" alt="Small Slide Image">
+                        </div>
+                    </div>
+                    <div class="carousel-controls">
+                        <a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel-1" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <!-- <div class="pausePlay">
+                        <i style="font-size: 24px;" class="fa">&#xf04c;</i>
+                    </div> -->
+                    <i class="fa fa-pause pausePlay"></i>
+                    <i class="fa fa-play pausePlay"></i>
+                </div>
+            </div><!--/col-->
+        </div>
+    </div><!--/container-->
+    <section id="main-content">
+        <div class="container">
+            <!-- <div class="row">
+                <div class="col-12 col-sm-10 col-md-6 col-lg-4 offset-0 offset-sm-1 offset-md-3 offset-lg-0" style="margin-bottom:20px;">
+                    <div style="border:1px solid black;padding:10px;border-radius:5px;box-shadow:0px 0px 3px 4px rgba(211,211,211,0.17);background-color:#ffffff;">
+                        <div style="max-width:204px;margin:0 auto;"><img class="img-fluid" src="assets/img/icon1.gif"></div>
+                        <h3 class="text-center">Eliminates Dust<br></h3>
+                        <p class="text-center" style="margin-bottom:0px;">Clean Sweep's patented super absorbent formula absorbs more dirt and dust than oil based compounds.<br></p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-10 col-md-6 col-lg-4 offset-0 offset-sm-1 offset-md-3 offset-lg-0" style="margin-bottom:20px;">
+                    <div style="border:1px solid black;padding:10px;border-radius:5px;box-shadow:0px 0px 3px 4px rgba(211,211,211,0.17);background-color:#ffffff;">
+                        <div style="max-width:204px;margin:0 auto;"><img class="img-fluid" src="assets/img/icon2.gif"></div>
+                        <h3 class="text-center">Environmentally Safe<br></h3>
+                        <p class="text-center" style="margin-bottom:0px;">Unlike oil based compounds Clean Sweep contains no harmful or hazardous petroleum oil.<br></p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-10 col-md-6 col-lg-4 offset-0 offset-sm-1 offset-md-3 offset-lg-0" style="margin-bottom:20px;">
+                    <div style="border:1px solid black;padding:10px;border-radius:5px;box-shadow:0px 0px 3px 4px rgba(211,211,211,0.17);background-color:#ffffff;">
+                        <div style="max-width:204px;margin:0 auto;"><img class="img-fluid" src="assets/img/icon3.gif"></div>
+                        <h3 class="text-center">Safe for Flooring<br></h3>
+                        <p class="text-center" style="margin-bottom:0px;">Patented formula can be used on all hard surface flooring leaving a residue free and clean surface.<br></p>
+                    </div>
+                </div>
+            </div> -->
+            <div class="row my-3">
+                <div class="col-12 col-md-6 col-lg-8">
+                    <h2 class="text-center">Thanks for stopping by&#33;</h2>
+                    <p class="text-justify">Clean Sweep Products has been manufacturing quality 
+                        sweeping compounds for over sixty years and serving industrial distributors 
+                        all across North America. We are considered an industry leader for our 
+                        superior quality, fast and reliable service, and our low prices.
+                        We manufacture compounds for any type of floor. All our compounds are specially formulated 
+                        with top quality ingredients for maximum dust and dirt control for safe 
+                        and easy sweeping. In addition, our compounds are brightly colored red 
+                        or green for spot free sweeping. We offer a wide range of packaging choices, 
+                        and can also provide private labeling.</p>
+                </div><!--/col-->
+                <div class="col-12 col-md-6 col-lg-4">
+                        <div class="container">
+                            <h2>jR3DCarousel - with default options</h2>
+                            <div class="jR3DCarouselGalleryDefault"></div>
+                            <br /> <br />
+                            <br /> <hr />
+                        </div><!--/sub-container-->
+                    <!-- <h2 class="text-center">Our Product is...</h2>
+                    <ul>
+                        <li>Environmentally Safe</li>
+                        <li>Safe on Drains and Plumbing</li>
+                        <li>Distributed Nationally</li>
+                    </ul>
+                    This is where Gabriel should design graphics stating that is
+                    a) Environmentally Safe
+                    b) Distributed nationally
+                    c) Safe on Drains and Plumbing -->
+                </div><!--/col-->
+            </div><!--/row-->
+            <div class="row my-4">
+                <div class="col-12 col-md-6 private-label">
+                    <h4 class="text-center">We private label for...</h4>
+                    <div class="d-flex flex-row align-items-center justify-content-center">
+                        <img class="img-fluid" src="images/2000px-Lowes_Companies_Logo.svg.png">
+                        <img class="img-fluid" src="images/icon-home-depot-480.png">
+                        <img class="img-fluid" src="images/grainger.jpg">
+                    </div>
+                </div><!--/col-->
+                <div class="col-12 col-md-6 osha">
+                        <div class="d-flex flex-column align-items-center justify-content-center">
+                            <h4>We are also OSHA Certified&#33;</h4>
+                            <img src="images/OSHAlogo.png" class="img-fluid" style="width: 65%;">
+                        </div>
+                </div><!--/col-->
+            </div><!--/row-->
+            <hr>
+            <!--put the featured product article here.-->
+            <h1 class="text-center">Featured Product</h1>
+            <div class="row my-4">
+                <div class="col-12 col-md-5 order-2 order-md-1">
+                    <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad 
+                        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+                        commodo consequat.</p>   
+                </div><!--/col-->
+                <div class="col-12 col-md-7 d-flex flex-column align-items-center justify-content-center order-1 order-md-2">
+                    <iframe src="https://www.youtube.com/embed/CxbhGBiIAeA" 
+                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>    
+                </div><!--/col-->
+            </div><!--/row-->
+            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad 
+                minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
+                esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+                non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <hr>
+                <div class="row my-4">
+                <div class="col-12 col-md-5 d-flex flex-column align-items-center justify-content-center mb-4">
+                    <h2>Customer Reviews&#33;</h2>
+                    <div id="carouselExampleIndicators" class="carousel secondary-carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active text-center">J. Smith</li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1" class="text-center">J. Smith</li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2" class="text-center">J. Smith</li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="3" class="text-center">J. Smith</li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <h4>John Smith</h4>
+                                <p class="text-justify">&#34;Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad 
+                                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+                                    commodo consequat.&#34;</p>
+                            </div>
+                            <div class="carousel-item">
+                                <h4>John Smith</h4>
+                                <p class="text-justify">&#34;Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad 
+                                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+                                    commodo consequat.1&#34;</p>
+                            </div>
+                            <div class="carousel-item">
+                                <h4>John Smith</h4>
+                                <p class="text-justify">&#34;Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad 
+                                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+                                    commodo consequat.2&#34;</p>    
+                            </div>
+                            <div class="carousel-item">
+                                <h4>John Smith</h4>
+                                <p class="text-justify">&#34;Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad 
+                                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+                                    commodo consequat.3&#34;</p>    
+                            </div>    
+                        </div><!--/carousel-inner-->
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div><!--/carousel-->
+                </div><!--/col-->
+                <div class="col-12 col-md-7 featured-video d-flex flex-column align-items-center">
+                    <h2>Featured Video</h2>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/CxbhGBiIAeA" 
+                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <!--have the customer reviews on the left side and the video on the right-->
+                    <!--modify a carousel to show reviews-->
+                </div><!--/featured-video&&col-->
+            </div><!--/row-->
+        </div><!--/container-->
+    </section><!--/#main-content-->
+    <a class="up-arrow d-flex align-items-center justify-content-center"
+    href="#">
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </a>
+    <footer>
+        <h5 class="text-center"><a href="https://webmarketsol.com/" target="_blank">&copy;Web Marketing Solutions, LLC</a>, 2018. All rights reserved.</h5>
+    </footer>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        // $('.carousel').carousel({
+        //     interval: false
+        // });
+        // $('.carousel-indicators li').click(function () {
+        //     $('.carousel-indicators li').css({"background": "#123C69", "color": "#EEE2DC"});
+        // });
+        //See how you could have it where it knows which li you're clicking on.
+    </script>
+</body>
+
+</html>
