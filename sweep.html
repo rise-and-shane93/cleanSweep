@@ -68,7 +68,9 @@
     <section id="about">
         <div class="container">
             <h1 class="text-center">Sweeping Compound</h1>
-            <img src="images/compound5.png" alt="Image coming soon" title="Image coming soon" class="img-fluid">
+            <div class="compoundImage">
+                <!--This is where the random image will go.-->
+            </div>
             <!--The image would be a collage of one to three photos of sweeping compound.-->
             <!--This is where you would put an animation or something to display their sweeping compound.-->
             <div class="row my-5">
@@ -83,7 +85,7 @@
                         items and equipment. In addition, it diminishes inhalation of harmful dust.</p>        
                 </div><!--/col-->
                 <div class="col-12 col-md-6">
-                    <h3>Lorem Ipsum</h3>
+                    <h3 class="text-center">Lorem Ipsum</h3>
                     <!--This is the safety& environmental info on it-->
                     <p class="text-justify">
                         Clean Sweep is an all-natural and recycled product and is 
@@ -93,18 +95,86 @@
                         a durable box or a drum, which is great for storage.</p>   
                 </div><!--/col-->
             </div><!--/row-->
+            <h3 class="text-center my-3">Types of compound we offer&#58;</h3>
+            <p class="text-center">Click on our products to view a brief description&#33;</p>
             <div class="row mb-5">
-                <div class="col-12 col-md-6">
-                    <h3>Types of compound we offer&#63;</h3>
-                    <ul>
+                <div class="col-12 col-md-6 my-3">
+                    <div class="list-group" id="list-tab" role="tablist">
+                        <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Oil base with grit (regular)</a>
+                        <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Oil base: no-grit</a>
+                        <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Wax base</a>
+                        <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">USDA certified petroleum free (regular and no-grit)</a>
+                      </div>
+                    <!-- <ul>
                         <li>Oil base with grit (regular)</li>
                         <li>Oil base no-grit</li>
                         <li>Wax base</li>
                         <li>USDA certified petroleum free (regular and no-grit)</li>
-                    </ul>
+                    </ul> -->
                 </div><!--/col-->
-                <div class="col-12 col-md-6 compoundImage">
-
+                <div class="col-12 col-md-6 my-3">
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                            <p>Regular sweeping compound contains sand, which acts as an abrasive to loosen grime and dirt
+                                stuck on work floors and it is also effective for collecting and keeping the dust and dirt down
+                                while sweeping. This product used by the construction industry, warehouses,
+                                boat yards, factories, garages and anywhere heavy-duty cleaning is a must.</p>
+                            <p>Ideal for use on&#58;</p>
+                            <ul>
+                                <li>Unfinished wood</li>
+                                <li>Concrete floors</li>
+                                <li>Metal surfaces</li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+                            <p>No-grit sweeping compound does not contain abrasives, so it will
+                                not cause scratching on floors. No-grit is perfect
+                                for all types of wood, tile, terrazzo, and finished concrete floors. It
+                                collects dirt and dust, and also can be used to absorb liquid spills.
+                                Clean Sweep no-grit sweeping compound can be used in stores,
+                                warehouses, institutions, churches, restaurants, factories, schools
+                                and homes.</p>
+                            <p>Ideal for use on&#58;</p>
+                            <ul>
+                                <li>Ordinary wood and concrete</li>
+                                <li>Painted or sealed wood</li>
+                                <li>Finished concrete</li>
+                                <li>Tile, Terrazzo, and Rubber</li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+                            <p>Wax base sweeping compound contains wax and does not contain sand, this product
+                                conditions floors while it cleans. Wax base is perfect for waxed floors, painted and
+                                varnished floors, tile, terrazzo, finished wood and concrete. Clean Sweep wax base
+                                sweeping compound keeps high-quality floors looking their best&#33;</p>
+                            <p>Ideal for use on&#58;</p>
+                            <ul>
+                                <li>Schools</li>
+                                <li>Churches</li>
+                                <li>Museums</li>
+                                <li>Gyms</li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+                            <p>Green Sweep is an environmentally friendly, 100% USDA certified alternative to the traditional
+                                petroleum based compound. This compound is preferred green product for industries and consumers that want to leave a small pollution imprint
+                                by implementing green products in day to day business and work. Green Sweep is made as sanded
+                                grit or no-grit, and performs as well as the traditional petroleum oil base sweeping compounds.</p>
+                            <div class="usda">
+                                <div>
+                                    <p>This product is...</p>
+                                    <ul>
+                                        <li>Economical</li>
+                                        <li>Environmentally friendly</li>
+                                        <li>Made from recycled materials</li>
+                                        <li>Contains no petroleum ingredients</li>
+                                        <li>Safe for all floor surfaces</li>
+                                    </ul>
+                                </div>
+                                <img src="images/usda.png">
+                            </div>
+                        </div>
+                    </div>
                 </div><!--/col-->    
             </div><!--/row-->
             <img src="images/video-placeholder.jpg" alt="Video coming soon" title="Sweeping compound demo coming soon" class="img-fluid">

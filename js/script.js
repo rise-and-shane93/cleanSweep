@@ -91,7 +91,7 @@ $submitBtn.click(function() {
 //random image generator
 
 var images = [
-    "images/compound.png",
+    "images/compound1.png",
     "images/compound2.png",
     "images/compound3.png",
     "images/compound4.png",
@@ -117,21 +117,11 @@ function setRandomImage(src) {
     img.src = src;
 }
 
+
+
 const productImage = getRandomImage();
 setRandomImage(productImage);
 */
-
-function getRandomImage() {
-    var img = '<img alt=\"An image of Mary Kay Ash.\" class=\"img-fluid\" src=\"';
-    var randomImg;
-    randomImg = Math.floor(Math.random() * images.length);
-    img += images[randomImg];
-    img += '\">';
-    return img;
-};
-
-sweepingProduct.innerHTML = getRandomImage();
-//accordion
 
 var acc = document.getElementsByClassName('accordion');
 var i;
@@ -147,6 +137,19 @@ for (i = 0; i < acc.length; i++) {
         }
     });
 }
+
+function getRandomImage() {
+    var img = '<img alt=\"An image of sweeping compound.\" class=\"img-fluid random-image\" src=\"';
+    var randomImg;
+    randomImg = Math.floor(Math.random() * images.length);
+    img += images[randomImg];
+    img += '\">';
+    return img;
+};
+
+sweepingProduct.innerHTML = getRandomImage();
+//accordion
+
 
 
 /*

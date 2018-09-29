@@ -410,7 +410,32 @@ Products Div
 /*====================
 SWEEPING COMPOUND PAGE
 ====================*/
-
+.compoundImage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+}
+.random-image {
+    border: 10px solid #BAB2B5;
+    border-radius: 10px;
+    width: 60%;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); */
+}
+.usda {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.usda img {
+    width: 200px;
+    height: 100px;
+}
 
 /*====================
 CONTACT PAGE
@@ -823,6 +848,17 @@ Accordion
     }
     .gmap_canvas {
         height: 400px;
+    }
+    /*====================
+    SWEEPING COMPOUND PAGE
+    ====================*/
+    .usda {
+        flex-direction: row;
+    }
+    .usda img {
+        align-self: center;
+        width: 200px;
+        height: 100px;
     }
     /*====================
     FAQs PAGE
