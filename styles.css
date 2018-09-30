@@ -154,7 +154,7 @@ Primary-Carousel
     bottom: -15px;
     /* background-color: transparent; */
     transition: .3s ease-in-out;
-    background-color: radial-gradient(
+    background-image: radial-gradient(
     rgba(238,226,220,0.4),
     rgba(238,226,220,0.4) 80%);
     color: #D3D3D3;
@@ -233,7 +233,7 @@ won't apply*/
   border-radius: 50%;
   /* border: 1px solid black; */
   background-image: none;
-  background-color: none;
+  background-color: transparent;
 }
 .carousel-control-next-icon:after {
   content: '>';
@@ -317,7 +317,7 @@ Secondary-Carousel
     bottom: 290px;
     /* background-color: transparent; */
     transition: .3s ease-in-out;
-    background-color: radial-gradient(
+    background-image: radial-gradient(
     rgba(238,226,220,0.4),
     rgba(238,226,220,0.4) 80%);
     color: #D3D3D3;
@@ -866,3 +866,4 @@ Accordion
     .q-and-a {
         width: 60%;
     }
+}
